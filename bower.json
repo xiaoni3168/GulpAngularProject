@@ -1,0 +1,24 @@
+{
+  "name": "GulpAngularProject",
+  "version": "0.0.1",
+  "homepage": "https://github.com/xiaoni3168/GulpAngularProject",
+  "authors": [
+    "nirui <nirui@haizhi.com>"
+  ],
+  "description": "使用gulp构建angular项目",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "gulp",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

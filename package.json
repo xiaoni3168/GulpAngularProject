@@ -1,0 +1,23 @@
+{
+  "name": "GulpAngularProject",
+  "version": "0.0.1",
+  "description": "使用gulp构建angular项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoni3168/GulpAngularProject.git"
+  },
+  "keywords": [
+    "gulp",
+    "angular"
+  ],
+  "author": "xiaoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaoni3168/GulpAngularProject/issues"
+  },
+  "homepage": "https://github.com/xiaoni3168/GulpAngularProject"
+}

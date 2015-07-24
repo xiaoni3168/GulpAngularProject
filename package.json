@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/xiaoni3168/GulpAngularProject/issues"
   },
-  "homepage": "https://github.com/xiaoni3168/GulpAngularProject"
+  "homepage": "https://github.com/xiaoni3168/GulpAngularProject",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }

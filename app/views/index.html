@@ -1,5 +1,11 @@
 <div class="index-box">
     <h1>
-        <span class="letter-3d-{{$index%5}}" ng-repeat="letter in data.title track by $index">{{letter}}</span>
+        <span class="letter-3d-{{$index%5}}" ng-class="{true: 'letter'}[letter != ' ']" ng-repeat="letter in data.title track by $index">{{letter}}</span>
     </h1>
+    <div class="index-input">
+        <input type="text" name="username" placeholder="Welcome">
+    </div>
+    <div class="index-unlock">
+
+    </div>
 </div>

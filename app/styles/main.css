@@ -3,6 +3,9 @@ body{
 }
 
 .index-box{
+    -webkit-animation-name: jump-box;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: cubic-bezier(0.38, -0.37, 0, 1.7);
     width: 500px;
     height: 300px;
     background-color: #ededed;
@@ -17,7 +20,88 @@ body{
     padding: 10px inherit;
 }
 
+.letter{
+    margin-left: 5px;
+    transition-duration: 700ms;
+}
+
+.letter:hover{
+    display: -webkit-inline-box;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+    transition-duration: 700ms;
+    transform: translate(0px, -20px);
+}
+
 .letter-3d-0{
     color: #36B660;
-    text-shadow: 1px 1px 0px #91D97C,2px 2px 0px #91D97C,3px 3px 0px #91D97C,4px 4px 0px #868686;
+    text-shadow: 1px 1px 0px #91D97C,
+                 2px 2px 0px #91D97C,
+                 3px 3px 0px #91D97C,
+                 4px 4px 0px #868686;
+}
+
+.letter-3d-1{
+    color: #f7a221;
+    text-shadow: 1px 1px 0px #fab751,
+                 2px 2px 0px #fab751,
+                 3px 3px 0px #fab751,
+                 4px 4px 0px #868686;
+}
+
+.letter-3d-2{
+    color: #8021f7;
+    text-shadow: 1px 1px 0px #a86af5,
+                 2px 2px 0px #a86af5,
+                 3px 3px 0px #a86af5,
+                 4px 4px 0px #868686;
+}
+
+.letter-3d-3{
+    color: #f7216e;
+    text-shadow: 1px 1px 0px #ff619a,
+                 2px 2px 0px #ff619a,
+                 3px 3px 0px #ff619a,
+                 4px 4px 0px #868686;
+}
+
+.letter-3d-4{
+    color: #2164f7;
+    text-shadow: 1px 1px 0px #5284f4,
+                 2px 2px 0px #5284f4,
+                 3px 3px 0px #5284f4,
+                 4px 4px 0px #868686;
+}
+
+::-webkit-input-placeholder{
+    color: rgba(58, 157, 189, 0.82);
+    text-shadow: 0px 0px 2px;
+}
+
+.index-input{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.index-input input{
+    outline: none;
+    border: none;
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    background-color: rgba(175, 241, 165, 0.58);
+    border-radius: 3px;
+    transition-duration: 500ms;
+}
+
+.index-input input:hover{
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.22, 0.23, 0.74, 1.7);
+    background-color: rgba(165, 166, 241, 0.58);
+    transform: scale(1.3);
+}
+
+.index-unlock{
+
 }

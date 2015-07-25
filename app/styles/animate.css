@@ -1,0 +1,8 @@
+@-webkit-keyframes jump-box{
+    from {
+        transform: translate(-200px, -300px);
+    }
+    to {
+        transform: translate(0px, 0px);
+    }
+}

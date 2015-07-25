@@ -1,0 +1,23 @@
+body{
+    background-color: #CCCCCC;
+}
+
+.index-box{
+    width: 500px;
+    height: 300px;
+    background-color: #ededed;
+    margin: 150px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px #B8B8B8;
+}
+
+.index-box h1{
+    font-size: 43px;
+    text-align: center;
+    padding: 10px inherit;
+}
+
+.letter-3d-0{
+    color: #36B660;
+    text-shadow: 1px 1px 0px #91D97C,2px 2px 0px #91D97C,3px 3px 0px #91D97C,4px 4px 0px #868686;
+}

@@ -13,7 +13,7 @@ gulp.task('staticHtml', function() {
 });
 
 gulp.task('html', function() {
-    gulp.src('app/views/*.html')
+    gulp.src('app/**/*.html')
         .pipe(connect.reload());
 });
 
@@ -25,7 +25,7 @@ gulp.task('css', function() {
 gulp.task('watch', function() {
     gulp.watch(['app/scripts/**/*.js'], ['js']);
     gulp.watch(['app/*.html'], ['staticHtml']);
-    gulp.watch(['app/views/*.html', ['html']]);
+    gulp.watch(['app/**/*.html', ['html']]);
     gulp.watch(['app/styles/*.css'], ['css']);
 });
 

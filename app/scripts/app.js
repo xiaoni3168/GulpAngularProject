@@ -6,6 +6,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('/', {
             url: '/',
-            templateUrl: 'views/index.html'
+            templateUrl: 'views/index.html',
+            controller: 'indexController'
         });
 });

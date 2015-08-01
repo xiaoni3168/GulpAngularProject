@@ -1,0 +1,17 @@
+<div class="colum-data">
+    <div class="">
+        <span class="add-table" ng-click="fn.createTable()"></span>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td ng-repeat="head in data.columHeads track by $index">{{head | tableColumHead}}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td ng-repeat="data in data.columData track by $index">{{data}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

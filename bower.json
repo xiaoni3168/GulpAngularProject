@@ -25,6 +25,9 @@
     "angular": "~1.4.3",
     "angular-ui-router": "~0.2.15",
     "bootstrap": "~3.3.5",
-    "angular-resource": "~1.4.3"
+    "angular-resource": "~1.4.3",
+    "angular-gridster": "~0.13.5",
+    "angular-dragdrop": "~1.0.11",
+    "zTree_v3": "https://github.com/zTree/zTree_v3.git#~3.5.18"
   }
 }

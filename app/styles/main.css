@@ -1,5 +1,6 @@
 body{
     background-color: #CCCCCC;
+    font-family: serif;
 }
 
 .index-box{
@@ -84,7 +85,7 @@ body{
 
 .index-input input{
     outline: none;
-    border: none;
+    border: 1px solid #FFFFFF;
     width: 230px;
     height: 30px;
     text-align: center;
@@ -103,5 +104,188 @@ body{
 }
 
 .index-unlock{
+    text-align: center;
+    margin-top: 37px;
+}
 
+.index-unlock-panel{
+    display: inline-block;
+    background-color: #f59a9a;
+    height: 30px;
+    width: 170px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px #c28612 inset;
+}
+
+.unlock-area{
+    height: 30px;
+    position: absolute;
+    background-color: #1cb462;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 2px #298125 inset;
+}
+
+.lock-dot{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 3px #5b5cb6;
+    cursor: pointer;
+}
+
+.dashboard-container{
+    background-color: #dedede;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.dashboard-frame-top{
+    width: 100%;
+    height: 70px;
+    background-color: #222;
+    border: 1px solid #070707;
+}
+
+.dashboard-frame-bottom{
+    width: 100%;
+    height: 500px;
+    margin-top: 1px;
+    overflow: scroll;
+}
+
+.dashboard-frame-bottom-left{
+    min-height: 500px;
+    width: 75%;
+    background-color: #FFFFFF;
+}
+
+.dashboard-frame-bottom-right{
+
+}
+
+.option-panel{
+    height: 100%;
+    text-align: center;
+}
+
+.option-panel .btn{
+    height: inherit;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+.close-area{
+    height: 30px;
+    width: 30px;
+    background-color: #288;
+    float: right;
+    transition: 500ms;
+    border-bottom-left-radius: 30px;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    cursor: pointer;
+}
+
+.manager-left{
+    width: 30%;
+    display: inline-block;
+}
+
+.manager-right{
+    float: right;
+    width: 60%;
+}
+
+#dbTree span {
+    background-size: 21px 21px !important;
+}
+
+#dbTree span.remove{
+    background-image: url(/images/sqlite3/table_remove.png);
+    background-repeat: repeat;
+}
+
+.colum-data{
+    margin: 70px 30px;
+}
+
+.colum-data table{
+    width: 90%;
+    text-align: center;
+}
+
+.colum-data table td{
+    border: 1px solid #E2E2E2;
+}
+
+.colum-data table thead tr{
+    height: 30px;
+    background-color: #CACACA;
+}
+
+.colum-data table tbody tr{
+    height: 35px;
+}
+
+.colum-data table tbody tr:hover{
+    background-color: #adadad;
+}
+
+.add-table{
+    display: inline-block;
+    background-image: url(/images/sqlite3/table_add.png);
+    background-size: 37px 37px;
+    background-repeat: no-repeat;
+    height: 37px;
+    width: 37px;
+    cursor: pointer;
+}
+
+.add-table:active{
+    background-color: #CCCCCC;
+}
+
+.add-table-panel{
+    padding: 20px 0 0 0;
+}
+
+.add-table-panel table{
+    width: 90%;
+    text-align: center;
+}
+
+.add-table-panel table thead tr{
+    background-color: #CACACA;
+    height: 30px;
+}
+
+.add-table-panel table tbody tr{
+    height: 35px;
+}
+
+.add-table-panel table td{
+    border: 1px solid #E2E2E2;
+}
+
+.add-table-panel table td .btn{
+    height: 20px;
+    width: 20px;
+    padding: 0;
+}
+
+.add-table-panel table td input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 5px;
+}
+
+.table-name{
+    float: right;
+    outline: none;
+    margin-right: 58px;
 }

@@ -1,0 +1,25 @@
+<div class="add-table-panel">
+    <div class="clearfix">
+        <span class="btn btn-success" ng-click="fn.addRow()"><i class="glyphicon glyphicon-plus"></i></span>
+        <span class="btn btn-primary" ng-click="fn.submitTable()"><i class="glyphicon glyphicon-saved"></i></span>
+        <input type="text" class="table-name" ng-model="data.tableName" placeholder="table name" />
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td ng-repeat="head in data.addTableHeads track by $index">{{head.name}}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in data.tableRows track by $index">
+                <td ng-repeat="line in data.addTableHeads track by $index">
+                    <span ng-if="line.id == 0" class="btn btn-danger" ng-click="fn.removeRow(row)"><i class="glyphicon glyphicon-minus"></i></span>
+                    <input ng-if="line.id == 1" type="text" ng-model="row.name" />
+                    <input ng-if="line.id == 2" type="text" ng-model="row.type" />
+                    <input ng-if="line.id == 3" type="checkbox" ng-model="row.notNull" ng-checked="false" />
+                    <input ng-if="line.id == 4" type="checkbox" ng-model="row.pk" ng-checked="false" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

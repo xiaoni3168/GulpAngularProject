@@ -289,3 +289,35 @@ body{
     outline: none;
     margin-right: 58px;
 }
+
+.image-left{
+    width: 30%;
+    display: inline-block;
+    position: relative;
+}
+
+.image-right{
+    float: right;
+    width: 60%;
+}
+
+.file-input{
+    border: 1px solid;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.upload-area .btn{
+    height: 60px;
+    width: 100px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.show-image{
+    height: 700px;
+}

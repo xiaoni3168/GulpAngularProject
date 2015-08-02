@@ -21,6 +21,7 @@ app.controller('dashboardController', ['$scope', '$location', 'Service', '$timeo
     $scope.data.container = {};
     $scope.data.workingSheet = {};
     $scope.data.tableRows = [];
+    $scope.data.imageFile = {};
 
     $scope.data.draggable = {
         animate: 'true',
@@ -57,10 +58,13 @@ app.controller('dashboardController', ['$scope', '$location', 'Service', '$timeo
                     $location.path('/dashboard/tabelManager');
                     $timeout(function() {
                         $scope.fn.initDbTree();
-                    }, 100);
+                    }, 1000);
                     break;
                 case 1:
-                    
+                    $location.path('/dashboard/imageManager');
+                    $timeout(function() {
+                        $scope.fn.fileManager();
+                    }, 1000);
                     break;
                 default:
                     break;
@@ -204,6 +208,52 @@ app.controller('dashboardController', ['$scope', '$location', 'Service', '$timeo
                 {id: 1, pId: 0, name: 'LoL Tables', type: 1, open: false, isParent: true, iconClose: '../../images/sqlite3/data.png', iconOpen: '../../images/sqlite3/data_folder.png'}
             ];
             $.fn.zTree.init($('#dbTree'), setting, zNodes);
+        },
+
+        fileManager: function() {
+            var file = angular.element(document.querySelector('#fileSelector'))[0];
+            var imageArea = angular.element(document.querySelector('#imageArea'))[0];
+            file.onchange = function(event) {
+                var f = event.target.files[0];
+                if(!/image\/\w+/.test(f.type)){
+                    alert("请确保文件为图像类型");
+                    return false;
+                }
+                var reader = new FileReader();
+                reader.readAsDataURL(f);
+                reader.onload = function(e) {
+                    imageArea.src = this.result;
+                    $scope.data.imageFile = {
+                        image: this.result,
+                        imageName: f.name.substr(0, f.name.lastIndexOf('.')),
+                        imageSize: e.total
+                    }
+                }
+            }
+        },
+
+        imageZoomIn: function() {
+            var imageArea = $('#imageArea');
+            if(imageArea.height() < 700) {
+                imageArea.height(imageArea.height() + 50);
+            }
+        },
+
+        imageZoomOut: function() {
+            var imageArea = $('#imageArea');
+            if(imageArea.height() > 400) {
+                imageArea.height(imageArea.height() - 50);
+            }
+        },
+
+        uploadImage: function() {
+            if($scope.data.imageFile.imageSize) {
+                Service.uploadImage($scope.data.imageFile).then(function(data) {
+                    console.log(data);
+                });
+            }
         }
+
     }
+
 }]);

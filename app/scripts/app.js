@@ -58,5 +58,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('dashboard.tabelManager.addTable', {
             url: '/addTable',
             templateUrl: 'views/dashboard_tableManager_addTable.html'
+        })
+        .state('dashboard.imageManager', {
+            url: '/imageManager',
+            templateUrl: 'views/dashboard_imageManager.html'
         });
 });

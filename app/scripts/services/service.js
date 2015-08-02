@@ -22,4 +22,10 @@ app.service('Service', ['$http', function($http) {
             return data;
         });
     };
+
+    this.uploadImage = function(imageFile) {
+        return $http.post('/api/uploadImage', imageFile).then(function(data) {
+            return data;
+        });
+    }
 }]);

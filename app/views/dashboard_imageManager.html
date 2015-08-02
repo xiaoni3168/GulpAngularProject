@@ -1,0 +1,18 @@
+<div class="clearfix">
+    <div class="image-left">
+        <div class="upload-area">
+            <span class="btn btn-info">选择图片</span>
+            <input id="fileSelector" type="file" class="file-input"/>
+        </div>
+        <div class="option-area">
+            <span class="btn btn-warning" ng-click="fn.imageZoomIn()"><i class="glyphicon glyphicon-zoom-in"></i></span>
+            <span class="btn btn-warning" ng-click="fn.imageZoomOut()"><i class="glyphicon glyphicon-zoom-out"></i></span>
+        </div>
+        <div class="">
+            <span class="btn btn-primary" ng-click="fn.uploadImage()">上传图片</span>
+        </div>
+    </div>
+    <div class="image-right">
+        <img id="imageArea" class="show-image" src="/images/default.jpg" alt="" />
+    </div>
+</div>
